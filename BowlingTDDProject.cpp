@@ -2,6 +2,15 @@
 #include "catch.hpp"
 #include "BowlingGame.h"
 
-TEST_CASE("DummyTest") {
-    REQUIRE( 1 == 1);
+class SimpleCalculator {
+public:
+    int add(int a, int b) {
+        return a + b;
+    }
+};
+
+TEST_CASE("SimpleCalculator_add_test") {
+    SimpleCalculator testObj;
+
+    REQUIRE( testObj.add(2, 2) == 4);
 }
