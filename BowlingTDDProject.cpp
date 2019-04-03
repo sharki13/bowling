@@ -1,18 +1,7 @@
-#define BOOST_TEST_MAIN
-#if !defined( WIN32 )
-    #define BOOST_TEST_DYN_LINK
-#endif
-#include <boost/test/unit_test.hpp>
+#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+#include "catch.hpp"
 #include "BowlingGame.h"
 
-namespace
-{
-	BOOST_AUTO_TEST_SUITE(BowlingGameTests)
-
-	BOOST_AUTO_TEST_CASE(testcase)
-	{
-	}
-
-	BOOST_AUTO_TEST_SUITE_END()
+TEST_CASE("DummyTest") {
+    REQUIRE( 1 == 1);
 }
-

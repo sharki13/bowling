@@ -15,6 +15,9 @@ endif()
 set(TSOURCES BowlingTDDProject.cpp BowlingGame.h)
 set(CMAKE_BUILD_TYPE Debug)
 
+add_executable(${CMAKE_PROJECT_NAME} ${TSOURCES})
+target_link_libraries(${CMAKE_PROJECT_NAME})
+
 add_custom_target(run
     COMMAND ${CMAKE_PROJECT_NAME}
 )
