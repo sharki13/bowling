@@ -1,4 +1,4 @@
-#include "catch.hpp"
+#include "catch/catch.hpp"
 #include "BowlingGame.h"
 
 class SimpleCalculator {

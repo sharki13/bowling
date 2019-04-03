@@ -12,7 +12,7 @@ else()
         message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
 
-set(TSOURCES BowlingTDDProject.cpp BowlingGame.h test_runner.cpp)
+set(TSOURCES BowlingTDDProject.cpp BowlingGame.h catch/catch_main.cpp)
 set(CMAKE_BUILD_TYPE Debug)
 
 add_executable(${CMAKE_PROJECT_NAME} ${TSOURCES})
