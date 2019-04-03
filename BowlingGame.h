@@ -1,5 +1,4 @@
-#ifndef BOWLING_GAME_H
-#define BOWLING_GAME_H
+#pragma once
 
 class BowlingGame
 {
@@ -7,4 +6,3 @@ public:
 private:
 };
 
-#endif
