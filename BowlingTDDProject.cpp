@@ -13,5 +13,4 @@ TEST_CASE("SimpleCalculator_add_test") {
 
     REQUIRE( testObj.add(2, 2) == 4);
     REQUIRE( testObj.add(2, 4) == 6);
-    REQUIRE( testObj.add(3, 4) == 7);
 }
