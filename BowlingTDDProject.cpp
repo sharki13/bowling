@@ -1,4 +1,3 @@
-#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 #include "BowlingGame.h"
 
@@ -13,4 +12,6 @@ TEST_CASE("SimpleCalculator_add_test") {
     SimpleCalculator testObj;
 
     REQUIRE( testObj.add(2, 2) == 4);
+    REQUIRE( testObj.add(2, 4) == 6);
+    REQUIRE( testObj.add(3, 4) == 7);
 }
